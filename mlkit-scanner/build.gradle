@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.library'
+    id 'com.github.dcendents.android-maven'
+}
+group = 'com.github.ITxiaoguang'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        minSdkVersion 21
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    api 'com.google.mlkit:barcode-scanning:16.2.0'
+    def camerax_version = '1.0.1';
+    // The following line is optional, as the core library is included indirectly by camera-camera2
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    // If you want to additionally use the CameraX Lifecycle library
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    // If you want to additionally use the CameraX View class
+    implementation "androidx.camera:camera-view:1.0.0-alpha25"
+
+}
