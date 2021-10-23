@@ -11,13 +11,13 @@
         android:id="@+id/iv_point_bg"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        tools:background="@drawable/mn_scan_result_point_default" />
+        tools:background="@drawable/drawable_scan_result_point_default" />
 
     <ImageView
         android:id="@+id/iv_point_arrow"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/mn_icon_scan_default_result_point_arrow" />
+        android:src="@drawable/ic_scan_default_result_point_arrow" />
 
 </RelativeLayout>

@@ -74,7 +74,7 @@ public class ScanResultPointView extends FrameLayout {
     }
 
     private void initView() {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.mn_scan_result_point_view, this);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.view_scan_result_point, this);
         fakeStatusBar = view.findViewById(R.id.fakeStatusBar2);
         iv_show_result = view.findViewById(R.id.iv_show_result);
         tv_cancle = view.findViewById(R.id.tv_cancle);
@@ -131,12 +131,12 @@ public class ScanResultPointView extends FrameLayout {
         if (!TextUtils.isEmpty(resultPointColorStr)) {
             resultPointColor = Color.parseColor(resultPointColorStr);
         } else {
-            resultPointColor = getContext().getResources().getColor(R.color.mn_scan_viewfinder_laser_result_point);
+            resultPointColor = getContext().getResources().getColor(R.color.viewfinder_laser_result_point);
         }
         if (!TextUtils.isEmpty(resultPointStrokeColorStr)) {
             resultPointStrokeColor = Color.parseColor(resultPointStrokeColorStr);
         } else {
-            resultPointStrokeColor = getContext().getResources().getColor(R.color.mn_scan_viewfinder_laser_result_point_border);
+            resultPointStrokeColor = getContext().getResources().getColor(R.color.viewfinder_laser_result_point_border);
         }
     }
 
@@ -175,7 +175,7 @@ public class ScanResultPointView extends FrameLayout {
             int centerX = boundingBox.centerX();
             int centerY = boundingBox.centerY();
 
-            View inflate = LayoutInflater.from(getContext()).inflate(R.layout.mn_scan_result_point_item_view, null);
+            View inflate = LayoutInflater.from(getContext()).inflate(R.layout.view_item_result_point, null);
             RelativeLayout rl_root = inflate.findViewById(R.id.rl_root);
             ImageView iv_point_bg = inflate.findViewById(R.id.iv_point_bg);
             ImageView iv_point_arrow = inflate.findViewById(R.id.iv_point_arrow);

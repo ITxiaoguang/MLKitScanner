@@ -85,8 +85,8 @@ public final class ViewfinderView extends View {
         paintLine = new Paint(Paint.ANTI_ALIAS_FLAG);
         paintLaser = new Paint(Paint.ANTI_ALIAS_FLAG);
         Resources resources = getResources();
-        maskColor = resources.getColor(R.color.mn_scan_viewfinder_mask);
-        laserColor = resources.getColor(R.color.mn_scan_viewfinder_laser);
+        maskColor = resources.getColor(R.color.viewfinder_mask);
+        laserColor = resources.getColor(R.color.viewfinder_laser);
         hintMsg = "扫二维码/条形码";
         //文字
         paintText.setColor(Color.WHITE);

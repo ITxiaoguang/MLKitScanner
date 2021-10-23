@@ -209,8 +209,8 @@ public class ScanConfig implements Serializable {
         private String scanColor;
         private String bgColor;
         private LaserStyle laserStyle = LaserStyle.Line;
-        private int activityOpenAnime = R.anim.mn_scan_activity_bottom_in;
-        private int activityExitAnime = R.anim.mn_scan_activity_bottom_out;
+        private int activityOpenAnime = R.anim.anim_bottom_in;
+        private int activityExitAnime = R.anim.anim_bottom_out;
         private int customShadeViewLayoutID;
         //网格扫描线的列数
         private int gridScanLineColumn;

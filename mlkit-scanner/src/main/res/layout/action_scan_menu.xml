@@ -31,7 +31,7 @@
                     android:id="@+id/iv_scan_light"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/mn_icon_scan_flash_light_off" />
+                    android:src="@drawable/ic_scan_flash_light_off" />
 
                 <TextView
                     android:id="@+id/tv_scan_light"
@@ -56,7 +56,7 @@
                     android:layout_width="26dp"
                     android:layout_height="26dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/mn_icon_scan_close" />
+                    android:src="@drawable/ic_scan_close" />
 
             </LinearLayout>
             <!--相册-->
@@ -73,7 +73,7 @@
                     android:layout_width="26dp"
                     android:layout_height="26dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/mn_icon_scan_photo" />
+                    android:src="@drawable/ic_scan_photo" />
 
             </LinearLayout>
         </RelativeLayout>

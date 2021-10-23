@@ -61,7 +61,7 @@ public class ScanActionMenuView extends FrameLayout {
 
     private void initView() {
         //绑定
-        LayoutInflater.from(getContext()).inflate(R.layout.mn_scan_action_menu, this);
+        LayoutInflater.from(getContext()).inflate(R.layout.action_scan_menu, this);
 
         btn_scan_light = (LinearLayout) findViewById(R.id.btn_scan_light);
         iv_scan_light = (ImageView) findViewById(R.id.iv_scan_light);
@@ -135,12 +135,12 @@ public class ScanActionMenuView extends FrameLayout {
     }
 
     public void openLight() {
-        iv_scan_light.setImageResource(R.drawable.mn_icon_scan_flash_light_on);
+        iv_scan_light.setImageResource(R.drawable.ic_scan_flash_light_on);
         tv_scan_light.setText("关闭手电筒");
     }
 
     public void closeLight() {
-        iv_scan_light.setImageResource(R.drawable.mn_icon_scan_flash_light_off);
+        iv_scan_light.setImageResource(R.drawable.ic_scan_flash_light_off);
         tv_scan_light.setText("打开手电筒");
     }
 

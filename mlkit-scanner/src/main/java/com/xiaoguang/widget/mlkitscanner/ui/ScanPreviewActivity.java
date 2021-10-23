@@ -62,7 +62,7 @@ public class ScanPreviewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        setContentView(R.layout.mn_scan_activity_scan_preview);
+        setContentView(R.layout.activity_scan_preview);
         mContext = this;
         sActivityRef = new WeakReference<>(this);
         initConfig();
@@ -371,7 +371,7 @@ public class ScanPreviewActivity extends AppCompatActivity {
         rl_act_root.removeView(mPreviewView);
         rl_act_root.removeView(action_menu_view);
         finish();
-        overridePendingTransition(0, mScanConfig.getActivityExitAnime() == 0 ? R.anim.mn_scan_activity_bottom_out : mScanConfig.getActivityExitAnime());
+        overridePendingTransition(0, mScanConfig.getActivityExitAnime() == 0 ? R.anim.anim_bottom_out : mScanConfig.getActivityExitAnime());
     }
 
     //---------对外提供方法----------

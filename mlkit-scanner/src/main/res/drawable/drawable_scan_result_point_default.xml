@@ -7,11 +7,11 @@
         android:height="36dp" />
 
     <!-- 填充的颜色 -->
-    <solid android:color="@color/mn_scan_viewfinder_laser_result_point" />
+    <solid android:color="@color/viewfinder_laser_result_point" />
 
     <stroke
         android:width="3dp"
-        android:color="@color/mn_scan_viewfinder_laser_result_point_border" />
+        android:color="@color/viewfinder_laser_result_point_border" />
 
     <corners android:radius="36dp" />
 
