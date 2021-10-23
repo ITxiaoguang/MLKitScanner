@@ -2,6 +2,8 @@
 
 ##  基于Google MLKit 快速集成二维码扫描，速度比zxing快，可配置相册，闪光灯，相机可以调整焦距放大缩小，自定义扫描线颜色，自定义背景颜色，自定义遮罩层，支持同时扫多个二维码和条形码
 
+[![](https://jitpack.io/v/ITxiaoguang/MLKitScanner.svg)](https://jitpack.io/#ITxiaoguang/MLKitScanner)
+
 ##  功能：
     1：二维码扫描，手势缩放，无拉伸，样式自定义
     2：相册中选取图片识别
@@ -34,10 +36,11 @@
 ```
 
 #### 2.在Module目录下的build.gradle中添加依赖
+[![](https://jitpack.io/v/ITxiaoguang/MLKitScanner.svg)](https://jitpack.io/#ITxiaoguang/MLKitScanner)
 ``` gradle
 	dependencies {
 
-            implementation 'com.github.maning0303:MLKitScanner:V1.0.0'
+            implementation 'com.github.ITxiaoguang:MLKitScanner:xxx'
 
 	}
 ```
