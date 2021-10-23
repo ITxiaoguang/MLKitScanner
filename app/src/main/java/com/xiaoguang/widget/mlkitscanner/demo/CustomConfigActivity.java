@@ -285,11 +285,11 @@ public class CustomConfigActivity extends AppCompatActivity implements View.OnCl
                                 //手电筒
                                 if (ScanManager.isLightOn()) {
                                     ScanManager.closeScanLight();
-                                    iv_scan_light.setImageResource(R.drawable.icon_custom_light_close);
+                                    iv_scan_light.setImageResource(R.drawable.ic_custom_light_close);
                                     tv_scan_light.setText("开启手电筒");
                                 } else {
                                     ScanManager.openScanLight();
-                                    iv_scan_light.setImageResource(R.drawable.icon_custom_light_open);
+                                    iv_scan_light.setImageResource(R.drawable.ic_custom_light_open);
                                     tv_scan_light.setText("关闭手电筒");
                                 }
                             }

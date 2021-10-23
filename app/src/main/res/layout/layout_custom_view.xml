@@ -15,7 +15,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:padding="15dp"
-            android:src="@drawable/icon_custom_back" />
+            android:src="@drawable/ic_custom_back" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
             android:padding="12dp"
-            android:src="@drawable/icon_custom_photo" />
+            android:src="@drawable/ic_custom_photo" />
 
     </RelativeLayout>
 
@@ -58,7 +58,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="12dp"
-                android:src="@drawable/icon_custom_light_close" />
+                android:src="@drawable/ic_custom_light_close" />
 
             <TextView
                 android:id="@+id/tv_scan_light"
@@ -82,7 +82,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="10dp"
-                android:src="@drawable/icon_custom_my_card" />
+                android:src="@drawable/ic_custom_my_card" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="12dp"
-                android:src="@drawable/icon_custom_record" />
+                android:src="@drawable/ic_custom_record" />
 
             <TextView
                 android:layout_width="wrap_content"
