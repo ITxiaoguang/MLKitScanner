@@ -1,5 +1,7 @@
 package com.xiaoguang.widget.mlkitscanner.view;
 
+import static android.graphics.drawable.GradientDrawable.RECTANGLE;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -24,8 +26,6 @@ import com.xiaoguang.widget.mlkitscanner.utils.CommonUtils;
 import com.xiaoguang.widget.mlkitscanner.utils.StatusBarUtil;
 
 import java.util.List;
-
-import static android.graphics.drawable.GradientDrawable.RECTANGLE;
 
 /**
  * @author : maning
@@ -172,6 +172,31 @@ public class ScanResultPointView extends FrameLayout {
         for (int j = 0; j < resultPoint.size(); j++) {
             Barcode barcode = resultPoint.get(j);
             Rect boundingBox = barcode.getBoundingBox();
+
+//            // 扫描得到二维码的 左边线  上边线  右边线  下边线
+//            // 这样便可从图片中扣出这个二维码
+//            int left = boundingBox.left;
+//            int top = boundingBox.top;
+//            int right = boundingBox.right;
+//            int bottom = boundingBox.bottom;
+//
+//            Bitmap bitmap = Bitmap.createBitmap(barcodeBitmap, left, top, right - left, bottom - top);
+//
+//            try {
+//                // 需打开存储权限
+//                String path = Environment.getExternalStorageDirectory().getPath() + "/Android/data/" + fl_result_point_root.getContext().getPackageName() + "/cache/";
+//                File dir = new File(path);
+//                if (!dir.exists()) {
+//                    dir.mkdirs();
+//                }
+//                path += System.currentTimeMillis() + "qrcode.png";
+//                FileOutputStream fout = new FileOutputStream(path);
+//                bitmap.compress(Bitmap.CompressFormat.PNG, 100, fout);
+//                Log.i("ScanResultPointView", "qrcode picture path: " + path);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+
             int centerX = boundingBox.centerX();
             int centerY = boundingBox.centerY();
 
